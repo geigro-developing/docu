@@ -1,0 +1,39 @@
+---
+title: FiveM Car Development
+sidebar_label: Car Developing
+description: Grundlagen und Best Practices für Fahrzeug-Entwicklung in FiveM
+---
+
+# 🚗 FiveM Car Development
+
+Diese Dokumentation beschreibt den **kompletten Workflow zur Entwicklung von Fahrzeugen** für **:contentReference[oaicite:0]{index=0}** – von der Vorbereitung über Handling bis zur Optimierung.
+
+---
+
+## 📦 Voraussetzungen
+
+Bevor du startest, solltest du Folgendes haben:
+
+- Grundkenntnisse in **GTA V Modding**
+- Zugriff auf **OpenIV**
+- Ein 3D-Tool (z. B. Blender, ZModeler)
+- FiveM Server (lokal oder remote)
+
+---
+
+## 📁 Fahrzeug-Struktur
+
+Ein korrekt aufgebautes Fahrzeug-Resource sieht so aus:
+
+```text
+my_car/
+├─ fxmanifest.lua
+├─ stream/
+│  ├─ vehicle.yft
+│  ├─ vehicle_hi.yft
+│  ├─ vehicle.ytd
+│  └─ handling.meta
+├─ data/
+│  ├─ vehicles.meta
+│  ├─ carcols.meta
+│  └─ carvariations.meta
